@@ -1,10 +1,20 @@
 .navbar{
-	background-color: #00134d;
-
-
-
+	background-color:  #226666;
+	height: 20%;
 }
 
-html{
-	background-color: 
+nav a{ 
+	color:white;
+	font-family: "Montserrat";
 }
+
+.panel-body{
+	background-color: red;
+}
+
+body{
+	/*background-color: #669999 ; */
+}
+
+
+
