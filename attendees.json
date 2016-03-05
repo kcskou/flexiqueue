@@ -1,0 +1,16 @@
+{
+    "attendees": [
+        "1@test.com",
+        "2@test.com",
+        "3@test.com",
+        "7781235678",
+        "1234567890"
+    ],
+    "queue": [
+
+    ],
+    "done": [
+
+    ],
+    "status": false
+}
