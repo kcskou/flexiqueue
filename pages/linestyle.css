@@ -1,20 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
 .navbar{
 	background-color:  #226666;
-	height: 20%;
+	height: 50px
+}
+
+header{
+	font-family: "Dosis";
+	font-size: 100px;
+	text-align: center;
 }
 
 nav a{ 
 	color:white;
-	font-family: "Montserrat";
+	font-family: test; 
+	font-size: 30px;
 }
 
-.panel-body{
-	background-color: red;
+p{
+	font-family: "open sans";
+	font-size: 18px;
 }
 
-body{
-	/*background-color: #669999 ; */
+@font-face {
+font-family: test;
+src: url("trench100free.ttf") format("opentype");
 }
+
+
+@font-face {
+font-family: dosis;
+src: url("trench100free.ttf") format("opentype");
+}
+
 
 
 
