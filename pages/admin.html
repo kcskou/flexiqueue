@@ -1,0 +1,27 @@
+</div>
+	  <h1>Admin Page</h1>
+	  <div class="row">
+	 	  <div class="col-xs-12 col-md-8 col-md-offset-3">
+
+	 	 	 <h3>Event: Rio Olympic 2016</h3>
+             <div ng-if="data.status">
+                 <form ng-submit="closeQueue()">
+                     <input type="submit" class="btn btn-primary" value="Close Registration" />
+                 </form>
+             </div>
+             <div ng-if="!data.status">
+                 <form ng-submit="openQueue()">
+                     <input type="submit" class="btn btn-primary" value="Open Registration" />
+                 </form>
+             </div>
+	 	 	 <div class="attendeesInfo">
+	 	 	 	<h3>Length of Queue: {{getQueueLength(data.queues[0].line)}}</h3>
+                <form ng-submit="nextPerson()">
+                    <input type="submit" class="btn btn-success" value="All Done" />
+                <form>
+                    <input type="submit" class="btn btn-danger" value="Late" />
+	 	 	 </div>
+
+         </div>
+
+	  </div>

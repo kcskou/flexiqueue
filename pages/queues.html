@@ -1,0 +1,12 @@
+<h1 class="text-center">Pick a line</h1>
+<div ng-repeat="q in data.queues" class="col-xs-13 col-md-8 col-md-offset-2 panel panel-default">
+    <div class="panel-body clearfix">
+        <h3 class="pull-left">People in line: {{ getQueueLength(q.line) }}</h3>
+        <form ng-if="q.withinRadius" class="pull-right" ng-submit="getInLine($index)">
+            <input type="submit" class="btn btn-success btn-lg" value="Get in line!" />
+        </form>
+        <form ng-if="!q.withinRadius" class="pull-right">
+            <input type="submit" class="btn btn-disabled disabled btn-lg" value="Get closer!" />
+        </form>
+    </div>
+</div>
